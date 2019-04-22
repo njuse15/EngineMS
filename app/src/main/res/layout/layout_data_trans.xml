@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="1dp"
-        android:background="@color/orange"
+        android:background="@color/colorPrimary"
         android:gravity="center"
         android:text="还未连接任何设备"
         android:textColor="@android:color/black" />
@@ -39,7 +39,7 @@
             android:layout_width="80dp"
             android:layout_height="match_parent"
             android:text="发送"
-            android:background="@color/orange"/>
+            android:background="@color/colorPrimary"/>
     </LinearLayout>
 
 </LinearLayout>
