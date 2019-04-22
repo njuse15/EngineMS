@@ -32,3 +32,10 @@ hs_err_pid*
 .DS_Store
 /build
 /captures
+.idea/caches/build_file_checksums.ser
+.idea/codeStyles/Project.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/runConfigurations.xml
+.idea/misc.xml
+.idea/gradle.xml
