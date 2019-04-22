@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--创建足迹的页面-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_weight="0"
+        android:background="#00897B"
+        android:alpha="0.7">
+
+        <TextView
+            android:id="@+id/create_tv_return"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="12dp"
+            android:gravity="center"
+            android:text="返回"
+            android:textSize="18sp"
+            android:textColor="@color/colorWhite"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/create_tv_send"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="12dp"
+            android:gravity="center"
+            android:text="创建"
+            android:textSize="18sp"
+            android:textColor="@color/colorWhite"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_weight="0">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginLeft="8dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_account"/>
+
+        <TextView
+            android:gravity="start|center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginStart="8dp"
+            android:text="姓名" />
+
+        <TextView
+            android:gravity="start|center"
+            android:layout_marginStart="8dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text="日期"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/create_et_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:hint="标题(选填)"/>
+
+    <jp.wasabeef.richeditor.RichEditor
+        android:id="@+id/create_re_input"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:scrollbars="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+    </jp.wasabeef.richeditor.RichEditor>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_weight="0">
+
+        <LinearLayout
+            android:id="@+id/create_ll_function_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/create_iv_bold"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:src="@drawable/ic_bold"
+                android:scaleType="center"/>
+
+            <ImageView
+                android:id="@+id/create_iv_italic"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:src="@drawable/ic_italic"
+                android:scaleType="center"/>
+
+            <ImageView
+                android:id="@+id/create_iv_underline"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:src="@drawable/ic_underline"
+                android:scaleType="center"/>
+
+            <ImageView
+                android:id="@+id/create_iv_redo"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:src="@drawable/ic_redo"
+                android:scaleType="center"/>
+
+            <ImageView
+                android:id="@+id/create_iv_undo"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:src="@drawable/ic_undo"
+                android:scaleType="center"/>
+
+            <ImageView
+                android:id="@+id/create_iv_justify_left"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:src="@drawable/ic_align_left"
+                android:scaleType="center"/>
+
+            <ImageView
+                android:id="@+id/create_iv_justify_center"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:src="@drawable/ic_align_center"
+                android:scaleType="center"/>
+
+            <ImageView
+                android:id="@+id/create_iv_justify_right"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:src="@drawable/ic_align_right"
+                android:scaleType="center"/>
+
+            <ImageView
+                android:id="@+id/create_iv_insert_picture"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:src="@drawable/ic_insert_picture"
+                android:scaleType="center"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</LinearLayout>

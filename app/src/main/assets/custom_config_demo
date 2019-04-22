@@ -1,0 +1,62 @@
+[
+          {
+                    "featureType": "land",
+                    "elementType": "all",
+                    "stylers": {
+                              "lightness": 100,
+                              "saturation": -100
+                    }
+          },
+          {
+                    "featureType": "water",
+                    "elementType": "all",
+                    "stylers": {
+                              "lightness": 47
+                    }
+          },
+          {
+                    "featureType": "manmade",
+                    "elementType": "geometry",
+                    "stylers": {
+                              "lightness": 28
+                    }
+          },
+          {
+                    "featureType": "road",
+                    "elementType": "geometry.fill",
+                    "stylers": {
+                              "lightness": 82
+                    }
+          },
+          {
+                    "featureType": "road",
+                    "elementType": "geometry.stroke",
+                    "stylers": {
+                              "lightness": -76
+                    }
+          },
+          {
+                    "featureType": "green",
+                    "elementType": "all",
+                    "stylers": {
+                              "lightness": 63,
+                              "saturation": -100
+                    }
+          },
+          {
+                    "featureType": "boundary",
+                    "elementType": "geometry.fill",
+                    "stylers": {
+                              "lightness": 80,
+                              "saturation": 1
+                    }
+          },
+          {
+                    "featureType": "boundary",
+                    "elementType": "geometry.stroke",
+                    "stylers": {
+                              "lightness": -75,
+                              "saturation": -100
+                    }
+          }
+]
